@@ -9,3 +9,5 @@ this = 'mycode'
 def myfunc():
     hello
 ```
+
+[a relative link](another-page.md)
