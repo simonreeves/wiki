@@ -1,6 +1,6 @@
 # wiki
 
-## some stuff
+## some stuff 
 [create an anchor](#another)
 
 hello
@@ -24,7 +24,7 @@ def n():
         print(prop.name() + ': ' + mat_parm.eval())
     
 ```
-# another
+# another [#](#another)
 
 ## some stuffaasfas
 here is some code
