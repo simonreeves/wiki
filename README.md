@@ -1,5 +1,8 @@
 # wiki
 
+## some stuff
+[create an anchor](#another)
+
 hello
 here is some code
 ```python
@@ -21,7 +24,9 @@ def n():
         print(prop.name() + ': ' + mat_parm.eval())
     
 ```
-## another
+# another
+
+## some stuffaasfas
 here is some code
 ```python
 # not complete but an example
