@@ -1,50 +1,62 @@
-# wiki
+# CG Guide
+A collection of examples, guides, tips.
+I wanted a place to store snippets and examples I hope it helps others too.
 
-## some stuff 
-[create an anchor](#another)
+### Other Resources
+  - [tokeru.com/cgwiki/?title=Houdini](http://www.tokeru.com/cgwiki/?title=Houdini)
+    - An inspiration and a valuable learning resource by Matt Estela
+  - [toadstorm.com/blog/](https://www.toadstorm.com/blog/)
 
-hello
-here is some code
+    
+# Houdini[#](#houdini)
+## Houdini_Python[#](#Houdini_Python)
+Create `null` objects from `transform SOPs`.
+This can be useful to re-create transforms at object level instead of 'deforming' geometry which is much heavier.
+
 ```python
-# not complete but an example
+def nulls_from_x():
+    for node in hou.selectedNodes():
+        print(node.name())
+        t = node.parmTuple('t').eval()
+        r = node.parmTuple('r').eval()
+        s = node.parmTuple('s').eval()
+        scale = node.parm('scale').eval()
 
-def n():
-    
-    # get child nodes from a node
-    prop_nodes = hou.node('/obj/action/props/').children()
-    
-    # loop through children
-    for prop in prop_nodes:
-        # filter by name
-        if 'lens' not in prop.name():
-            continue
-        
-        # get a parm on node
-        mat_parm = hou.parm(prop.path() + '/material1/shop_materialpath1')
-        print(prop.name() + ': ' + mat_parm.eval())
-    
+        new_null = hou.node('obj/').createNode('null')
+        new_null.parmTuple('t').set(t)
+        new_null.parmTuple('r').set(r)
+        new_null.parmTuple('s').set(s)
+        new_null.parm('scale').set(scale)
 ```
-# another [#](#another)
 
-## some stuffaasfas
-here is some code
+## VEX[#](#vex)
+vex wrangle examples
+```c
+// get nearest point index of second input
+int np = nearpoint(1, @P);
+
+// get that point's position
+vector np_pos = point(1, 'P', np);
+
+// measure distance
+float dist = distance(@P, np_pos);
+
+// normalise distance
+dist = fit(dist, ch('in_min'), ch('in_max'), ch('out_min'), ch('out_max'));
+
+// remap with ramp
+dist = chramp('remap', dist);
+
+// set attribute
+f@dist = dist;
+```
+
+## Houdini / Redshift
+Not well documented, how to enable console log
 ```python
-# not complete but an example
+# Toggle Redshift console log
+hou.hscript("Redshift_setLogLevel -L 5")
 
-def n():
-    
-    # get child nodes from a node
-    prop_nodes = hou.node('/obj/action/props/').children()
-    
-    # loop through children
-    for prop in prop_nodes:
-        # filter by name
-        if 'lens' not in prop.name():
-            continue
-        
-        # get a parm on node
-        mat_parm = hou.parm(prop.path() + '/material1/shop_materialpath1')
-        print(prop.name() + ': ' + mat_parm.eval())
-    
+# Set log level
+hou.hscript("Redshift_switchConsoleLog")
 ```
-[a relative link](another-page.md)
