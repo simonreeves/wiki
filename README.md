@@ -1,6 +1,5 @@
 # CG Guide
 A collection of examples, guides, tips.
-I wanted a place to store snippets and examples I hope it helps others too.
 
 ### Other Resources
   - [tokeru.com/cgwiki/?title=Houdini](http://www.tokeru.com/cgwiki/?title=Houdini)
