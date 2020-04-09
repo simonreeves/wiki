@@ -2,11 +2,11 @@
 A collection of examples, guides, tips.
 
 ### Other Resources
-  - [tokeru.com/cgwiki/?title=Houdini](http://www.tokeru.com/cgwiki/?title=Houdini)
-    - An inspiration and a valuable learning resource by Matt Estela
+  - [Matt Estela's cgwiki](http://www.tokeru.com/cgwiki/?title=Houdini) An inspiration and a valuable learning resource
   - [toadstorm.com/blog/](https://www.toadstorm.com/blog/)
-
-    
+  - [Michael Wilde zbrush referesher](https://www.youtube.com/watch?v=SKvPIkND1yI)
+  
+  
 # Houdini[#](#houdini)
 ## Houdini_Python[#](#Houdini_Python)
 Create `null` objects from `transform SOPs`.
