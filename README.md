@@ -9,13 +9,14 @@ A collection of examples, guides, tips.
   
 # Houdini[#](#houdini)
 
-# Cloth [#]
- - Always set substeps to [at least 5](https://youtu.be/1ztATWCOwn8?t=94), fixes initial stretching - then consider reducing collision passes.
+## Houdini_Cloth[#](#houdini_cloth)
+ - As if H18 Always set substeps to [at least 5](https://youtu.be/1ztATWCOwn8?t=94), fixes initial stretching - then consider reducing collision passes.
  - Really useful section of [Sidefx Jeff Laits vellum cloth tutorial](
 https://youtu.be/4nC-L19400I?t=12200), he shows a (complicated!) way to extract the holes after using create planar patch
  - [Help initially intersecting collisions](https://youtu.be/4nC-L19400I?t=2344)
 
-## Houdini_Python[#](#Houdini_Python)
+
+## Houdini_Python[#](#houdini_python)
 Create `null` objects from `transform SOPs`.
 This can be useful to re-create transforms at object level instead of 'deforming' geometry which is much heavier.
 
@@ -57,7 +58,7 @@ dist = chramp('remap', dist);
 f@dist = dist;
 ```
 
-## Houdini / Redshift
+## Houdini Redshift[#](#houdini-redshift)
 Not well documented, how to enable console log
 ```python
 # Toggle Redshift console log
