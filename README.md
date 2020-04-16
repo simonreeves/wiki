@@ -14,7 +14,7 @@ A collection of examples, guides, tips.
  - Really useful section of [Sidefx Jeff Laits vellum cloth tutorial](
 https://youtu.be/4nC-L19400I?t=12200), he shows a (complicated!) way to extract the holes after using create planar patch
  - [Help initially intersecting collisions](https://youtu.be/4nC-L19400I?t=2344)
- - [unpin using stopped (vellum H17)[https://youtu.be/NwabG-znu9Y?t=3113]
+ - [unpin using stopped(vellum H17)](https://youtu.be/NwabG-znu9Y?t=3113)
 
 ## Houdini Python[#](#houdini-python)
 Create `null` objects from `transform SOPs`.
