@@ -12,6 +12,10 @@ Here is a good intro to zbrush [Michael Wilde zbrush](https://www.youtube.com/wa
 
 # Houdini[#](#houdini)
 
+## Retopo
+ - Clear [simple quick video](https://www.youtube.com/watch?v=yAF3HtIFiVc) about using the retopo tool !
+ 
+ 
 ## Houdini Cloth[#](#houdini-cloth)
  - As if H18 Always set substeps to [at least 5](https://youtu.be/1ztATWCOwn8?t=94), fixes initial stretching - then consider reducing collision passes.
  - Really useful section of [Sidefx Jeff Laits vellum cloth tutorial](
