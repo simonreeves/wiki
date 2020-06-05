@@ -13,10 +13,13 @@ Here is a good intro to zbrush [Michael Wilde zbrush](https://www.youtube.com/wa
 # Houdini[#](#houdini)
 
 ## Rigging
-Just watch these Sidefx tutprials by Michael Goldfarb
+Just watch these Sidefx tutorials by Michael Goldfarb
 Scripts are included on the sidefx page (youtube better than vimeo for resuming etc.)
 https://www.sidefx.com/tutorials/rigging-series-01-hda-spine/
 
+## HDAs
+ - rigging tutorials have good guides of how to create HDAs
+ - [enable asset bar to show versions](https://youtu.be/jxpb36URQ9M?t=471)
 
 ## Retopo
  - Clear [simple quick video](https://www.youtube.com/watch?v=yAF3HtIFiVc) about using the retopo tool !
