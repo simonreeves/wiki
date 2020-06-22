@@ -30,7 +30,7 @@ To set a HDA's initial look add a `OnCreated` python script in scripts tab. The 
 
 ```python
 kwargs['node'].setUserData('nodeshape', 'clipped_left')
-kwargs['node'].setColor(hou.Color(0.075, 0.122, 0.157))
+kwargs['node'].setColor(hou.Color(0.175, 0.3, 0.35))
 ```
 
 ## Retopo
