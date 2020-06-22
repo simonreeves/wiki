@@ -14,12 +14,22 @@ Here is a good intro to zbrush [Michael Wilde zbrush](https://www.youtube.com/wa
 
 ## Rigging
 Just watch these Sidefx tutorials by Michael Goldfarb
-Scripts are included on the sidefx page (youtube better than vimeo for resuming etc.)
-https://www.sidefx.com/tutorials/rigging-series-01-hda-spine/
+Scripts are included on the [sidefx page](https://www.sidefx.com/tutorials/rigging-series-01-hda-spine/) watch the [series 1 playlist](https://www.youtube.com/playlist?list=PLXNFA1EysfYkxrb8DlW05gBi1LOZKBbHS), [series 2 is one big video that coves deformation](https://www.youtube.com/watch?v=vinCWv20Ib4) 
+
+:heavy_check_mark: Watch on youtube instead of vimeo, better player, supports resuming.
+
 
 ## HDAs
- - rigging tutorials have good guides of how to create HDAs
+ - [The SideFX rigging tutorials](https://www.youtube.com/playlist?list=PLXNFA1EysfYkxrb8DlW05gBi1LOZKBbHS) have good guides of how to create HDAs
  - [enable asset bar to show versions](https://youtu.be/jxpb36URQ9M?t=471)
+
+#### Set HDA node shape & color
+To set a HDA's initial look add a `OnCreated` python script in scripts tab. The following code sets the shape as 'clipped_left' and to some blueish colour.
+
+```python
+kwargs['node'].setUserData('nodeshape', 'clipped_left')
+kwargs['node'].setColor(hou.Color(0.075, 0.122, 0.157))
+```
 
 ## Retopo
  - Clear [simple quick video](https://www.youtube.com/watch?v=yAF3HtIFiVc) about using the retopo tool !
