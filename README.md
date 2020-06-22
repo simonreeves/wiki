@@ -6,11 +6,11 @@ A collection of examples, guides, tips.
   - [toadstorm.com/blog/](https://www.toadstorm.com/blog/)
   - [I have a bunch of gists for houdini/python/vex here](https://gist.github.com/simonreeves)
 
-# ZBrush[#](#zbrush)
+# ZBrush [#](#zbrush)
 Here is a good intro to zbrush [Michael Wilde zbrush](https://www.youtube.com/watch?v=SKvPIkND1yI) a good refresher for zbrush is helpful when you don't use it often!
 
 
-# Houdini[#](#houdini)
+# Houdini [#](#houdini)
 
 ## Rigging
 Just watch these Sidefx tutorials by Michael Goldfarb
