@@ -14,7 +14,9 @@ Here is a good intro to zbrush [Michael Wilde zbrush](https://www.youtube.com/wa
 
 ## Rigging
 Just watch these Sidefx tutorials by Michael Goldfarb
-Scripts are included on the [sidefx page](https://www.sidefx.com/tutorials/rigging-series-01-hda-spine/) watch the [series 1 playlist](https://www.youtube.com/playlist?list=PLXNFA1EysfYkxrb8DlW05gBi1LOZKBbHS), [series 2 is one big video that coves deformation](https://www.youtube.com/watch?v=vinCWv20Ib4) 
+ - Scripts are included on the [sidefx page](https://www.sidefx.com/tutorials/rigging-series-01-hda-spine/)
+ - watch the [series 1 playlist](https://www.youtube.com/playlist?list=PLXNFA1EysfYkxrb8DlW05gBi1LOZKBbHS)
+ - [series 2 is one big video that coves deformation](https://www.youtube.com/watch?v=vinCWv20Ib4) 
 
 :heavy_check_mark: Watch on youtube instead of vimeo, better player, supports resuming.
 
