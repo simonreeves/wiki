@@ -45,6 +45,13 @@ https://youtu.be/4nC-L19400I?t=12200), he shows a (complicated!) way to extract 
  - [unpin using stopped(vellum H17)](https://youtu.be/NwabG-znu9Y?t=3113)
 
 ## Houdini Python[#](#houdini-python)
+
+Check if in UI mode, ie. disable popups or enable things only when rendering
+
+```pythob
+hou.isUIAvailable()
+```
+
 Create `null` objects from `transform SOPs`.
 This can be useful to re-create transforms at object level instead of 'deforming' geometry which is much heavier.
 
