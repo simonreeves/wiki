@@ -10,7 +10,7 @@ A collection of examples, guides, tips.
 Here is a good intro to zbrush [Michael Wilde zbrush](https://www.youtube.com/watch?v=SKvPIkND1yI) a good refresher for zbrush is helpful when you don't use it often!
 
 # Nuke
- - Wish there was a attribute VOP for nuke, but in the mean time there is the [expression node]http://www.nukepedia.com/written-tutorials/expressions-101)
+ - Wish there was a attribute VOP for nuke, but in the mean time there is the [expression node](http://www.nukepedia.com/written-tutorials/expressions-101)
 
 # Houdini [#](#houdini)
 
