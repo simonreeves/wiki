@@ -11,6 +11,7 @@ Here is a good intro to zbrush [Michael Wilde zbrush](https://www.youtube.com/wa
 
 # Nuke
  - [Official Nuke Developers Documentation](https://learn.foundry.com/nuke/content/misc/nuke_devs.html)
+ - [Python Dev Guide](https://learn.foundry.com/nuke/developers/121/pythondevguide/)
  - Wish there was a attribute VOP for nuke, but in the mean time there is the [expression node](http://www.nukepedia.com/written-tutorials/expressions-101)
 
 # Houdini [#](#houdini)
