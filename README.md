@@ -1,6 +1,8 @@
 # CG Guide
 A collection of examples, guides, tips.
 
+ - [Nuke](/nuke.md)
+
 ### Other Resources
   - [Matt Estela's cgwiki](http://www.tokeru.com/cgwiki/?title=Houdini) An inspiration and a valuable learning resource
   - [toadstorm.com/blog/](https://www.toadstorm.com/blog/)
