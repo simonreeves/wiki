@@ -2,6 +2,14 @@
 
 # Houdini
 
+ - [Rigging](#rigging)
+ - [HDAs](#hdas)
+ - [Vex](#vex)
+ - [Python](#python)
+ - [Retopo](#retopo)
+ - [Cloth](#cloth)
+ 
+ 
 ## Rigging
 Just watch these Sidefx tutorials by Michael Goldfarb
  - Scripts are included on the [sidefx page](https://www.sidefx.com/tutorials/rigging-series-01-hda-spine/)
@@ -27,14 +35,14 @@ kwargs['node'].setColor(hou.Color(0.175, 0.3, 0.35))
  - Clear [simple quick video](https://www.youtube.com/watch?v=yAF3HtIFiVc) about using the retopo tool !
  
  
-## Houdini Cloth[#](#houdini-cloth)
+## Cloth
  - As if H18 Always set substeps to [at least 5](https://youtu.be/1ztATWCOwn8?t=94), fixes initial stretching - then consider reducing collision passes.
  - Really useful section of [Sidefx Jeff Laits vellum cloth tutorial](
 https://youtu.be/4nC-L19400I?t=12200), he shows a (complicated!) way to extract the holes after using create planar patch
  - [Help initially intersecting collisions](https://youtu.be/4nC-L19400I?t=2344)
  - [unpin using stopped(vellum H17)](https://youtu.be/NwabG-znu9Y?t=3113)
 
-## Houdini Python[#](#houdini-python)
+## Python
 
 Check if in UI mode, ie. disable popups or enable things only when rendering
 
@@ -61,7 +69,7 @@ def nulls_from_x():
         new_null.parm('scale').set(scale)
 ```
 
-## VEX[#](#vex)
+## VEX
 vex wrangle examples
 ```c
 // get nearest point index of second input
@@ -83,7 +91,7 @@ dist = chramp('remap', dist);
 f@dist = dist;
 ```
 
-## Houdini Redshift[#](#houdini-redshift)
+## Redshift
 Not well documented, how to enable console log
 ```python
 # Toggle Redshift console log
