@@ -36,7 +36,7 @@ kwargs['node'].setColor(hou.Color(0.175, 0.3, 0.35))
  
  
 ## Cloth
- - As if H18 Always set substeps to [at least 5](https://youtu.be/1ztATWCOwn8?t=94), fixes initial stretching - then consider reducing collision passes.
+ - As of H18 - always set substeps to [at least 5](https://youtu.be/1ztATWCOwn8?t=94), fixes initial stretching - then consider reducing collision passes.
  - Really useful section of [Sidefx Jeff Laits vellum cloth tutorial](
 https://youtu.be/4nC-L19400I?t=12200), he shows a (complicated!) way to extract the holes after using create planar patch
  - [Help initially intersecting collisions](https://youtu.be/4nC-L19400I?t=2344)
