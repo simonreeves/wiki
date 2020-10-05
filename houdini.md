@@ -43,7 +43,7 @@ kwargs['node'].setColor(hou.Color(0.175, 0.3, 0.35))
 ## Camera
 Set focus from object (null), this expression gets distance between origins of two objects
 ```
-lengthvlength(vtorigin(".","../focus"))
+vlength(vtorigin(".","../focus"))
 ```
 
 ## Retopo
