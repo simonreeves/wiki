@@ -6,7 +6,8 @@
  
  #### Read every nth frame
  In a read (or write etc.) node's expression manipulate the frame value like this
- Eg. this will read every 10th frame, 1001, 1011 etc.
+ 
+ Eg. This example will read every 10th frame, 1001, 1011 etc. (without the `-1` would be 1000, 1010 etc.)
  
  ```
  frame - ((frame%10)-1)
