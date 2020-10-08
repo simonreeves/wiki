@@ -23,7 +23,7 @@
 
 Open a nuke script file
 ```python
-nuke.scriptOpen(script_file)
+nuke.scriptOpen('my_nuke_shot.nk')
 ```
 
 Loop through nodes with a type filter eg. `Write` `Read`
@@ -43,16 +43,18 @@ Version-up a node using Nuke's built in script
 nukescripts.version_up()
 ```
 
+Get nuke script's full file path
+```python
+nuke.root().name()
+```
+
 Save script - with warning if it didn't save! (need to provide filename while not IN nuke GUI I think)
 ```python
 if not nuke.scriptSave(script_file):
     print('Script did not save for some reason')
 ```
 
-Get nuke script's full file path
-``python
-nuke.root().name()
-```
+
 
 Get nuke script's frame start/end
 ```python
