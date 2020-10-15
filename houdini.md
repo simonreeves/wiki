@@ -31,13 +31,33 @@ Just watch these Sidefx tutorials by Michael Goldfarb
 Turning on the asset definitions toolbar is useful for to see the version of a HDA in your scene (toolbar appears at top of parameters window) Assets Toolbar > Asset Manager... > Configuration tab > Asset Bar  switch dropdown menu to 'Display Menu of All Definitions'
 [Enable asset bar to show versions](https://youtu.be/jxpb36URQ9M?t=471)
 
+#### Param Callbacks
+This is detailed in the help but briefly
+  - On a param's 'Callback Script' setting, add callback code like
+```python
+hou.pwd().hm().my_function(kwargs)
+```
+  - Then in the *scripts* tab, add a `PythonModule`
+  - Then add the function with kwargs argument
+    - If the param was a menu for example, `script_value0` returns the item selected in the dropdown
+```python
+def my_function(kwargs):
+    this_node = kwargs['node']
+    selection_value = kwargs['script_value0']
+```
 
-#### Set HDA node shape & color
-To set a HDA's initial look add a `OnCreated` python script in scripts tab. The following code sets the shape as 'clipped_left' and to some blueish colour.
+
+
+#### Set HDA node look and settings
+To set a HDA's initial look, add a `OnCreated` python script in scripts tab. The following code sets the shape as 'clipped_left' and to some blueish colour.
 
 ```python
 kwargs['node'].setUserData('nodeshape', 'clipped_left')
 kwargs['node'].setColor(hou.Color(0.175, 0.3, 0.35))
+```
+If it is a material, it is useful to set the material flag
+```python
+kwargs['node'].setMaterialFlag(True)
 ```
 
 ## Camera
