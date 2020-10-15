@@ -26,7 +26,7 @@ Just watch these Sidefx tutorials by Michael Goldfarb
 [The SideFX rigging tutorials](https://www.youtube.com/playlist?list=PLXNFA1EysfYkxrb8DlW05gBi1LOZKBbHS) have lots of useful tips on how to create, and manage HDAs
 
 #### Turn on asset definitions toolbar
-![assettoolbar](asset_def_toolbar.png)
+![assettoolbar](media/asset_def_toolbar.png)
 
 Turning on the asset definitions toolbar is useful for to see the version of a HDA in your scene (toolbar appears at top of parameters window) Assets Toolbar > Asset Manager... > Configuration tab > Asset Bar  switch dropdown menu to 'Display Menu of All Definitions'
 [Enable asset bar to show versions](https://youtu.be/jxpb36URQ9M?t=471)
@@ -85,7 +85,7 @@ def nulls_from_x():
 ```
 
 ## VEX
-vex wrangle examples
+#### General useful vex wrangle examples
 ```c
 // get nearest point index of second input
 int np = nearpoint(1, @P);
@@ -104,6 +104,13 @@ dist = chramp('remap', dist);
 
 // set attribute
 f@dist = dist;
+```
+#### Add point on each prim
+![pointprim](media/point_each_prim_wrangle.PNG)
+
+```c
+addpoint(0, @P);
+removeprim(0, @primnum, 1);
 ```
 
 ## Redshift
