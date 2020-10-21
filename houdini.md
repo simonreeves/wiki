@@ -2,6 +2,7 @@
 
 # Houdini
 
+ - [Misc](#misc)
  - [Rigging](#rigging)
  - [HDAs](#hdas)
  - [Vex](#vex)
@@ -9,7 +10,12 @@
  - [Retopo](#retopo)
  - [Cloth](#cloth)
  
-
+## Misc
+#### Rotate camera 360 in 100 frames
+as an expression
+```
+fit(@Frame, 1001, 1101, 0, 360)
+```
 
 ## Rigging
 Just watch these Sidefx tutorials by Michael Goldfarb
