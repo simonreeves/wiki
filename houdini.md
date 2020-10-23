@@ -10,6 +10,10 @@
  - [Retopo](#retopo)
  - [Cloth](#cloth)
  
+ 
+:star: I also have saved some useful snippets as [gists](https://gist.github.com/simonreeves)
+ 
+ 
 ## Misc
 #### Rotate camera 360 in 100 frames
 as an expression
@@ -38,7 +42,7 @@ Turning on the asset definitions toolbar is useful for to see the version of a H
 [Enable asset bar to show versions](https://youtu.be/jxpb36URQ9M?t=471)
 
 #### Param Callbacks
-This is detailed in the help but briefly
+This is detailed in the help, but briefly:
   - On a param's 'Callback Script' setting, add callback code like
 ```python
 hou.pwd().hm().my_function(kwargs)
