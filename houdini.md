@@ -88,7 +88,7 @@ vlength(vtorigin(".","../focus"))
 https://youtu.be/4nC-L19400I?t=12200), he shows a (complicated!) way to extract the holes after using create planar patch
  - [Help initially intersecting collisions](https://youtu.be/4nC-L19400I?t=2344)
  - [Un-pin using @stopped attribute (vellum H17)](https://youtu.be/NwabG-znu9Y?t=3113)
-
+ - [stiffness dropoff](https://youtu.be/zPQZ8KJTjzo?t=1037)
 ## Python
 
 Check if in UI mode, ie. disable popups or enable things only when rendering
