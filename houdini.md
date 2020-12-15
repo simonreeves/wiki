@@ -23,6 +23,12 @@ as an expression
 fit(@Frame, 1001, 1101, 0, 360)
 ```
 
+### Frame Sequence translate from frame 1 to 1001
+In camera background for example
+```
+$JOB/MySequence.`padzero(4, $F4-1000)`.jpg
+```
+
 ## Rigging
 Just watch these Sidefx tutorials by Michael Goldfarb
  - Scripts are included on the [sidefx page](https://www.sidefx.com/tutorials/rigging-series-01-hda-spine/)
