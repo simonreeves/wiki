@@ -12,8 +12,14 @@
  
  
 :star: I also have saved some useful snippets as [gists](https://gist.github.com/simonreeves)
- 
-## Links
+
+## Third party Tools
+A rough list of some free, some paid, useful HDAs and tool sets
+
+ - Lucas Scheller LYNX fabric/weave HDAs https://www.lucascheller.de/posts/ecae2c0393b0980c5c909b5060fdc1a3/
+ - OD tools https://origamidigital.com/cart/index.php?route=product/product&path=59_63&product_id=64
+
+## Other blogs
  - https://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html
  
 ## Misc
