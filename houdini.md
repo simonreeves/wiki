@@ -149,6 +149,13 @@ dist = chramp('remap', dist);
 // set attribute
 f@dist = dist;
 ```
+
+#### Create random direction vector in cone
+```c
+vector axis = {0, 1, 0};
+vector2 u = rand(@class);
+vector direction = sample_direction_cone(axis, radians(ch("angle")), u);
+```
 #### Add point on each prim
 ![pointprim](media/point_each_prim_wrangle.PNG)
 
