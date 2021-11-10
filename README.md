@@ -3,6 +3,7 @@ A collection of examples, guides, tips.
 
  - [Houdini](/houdini.md)
  - [Nuke](/nuke.md)
+ - [Meshroom](/meshroom.md)
 
 ### Other Resources
   - [Matt Estela's cgwiki](http://www.tokeru.com/cgwiki/?title=Houdini) An inspiration and a valuable learning resource
