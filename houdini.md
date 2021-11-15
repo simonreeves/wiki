@@ -19,8 +19,9 @@ A rough list of some free, some paid, useful HDAs and tool sets
  - Lucas Scheller LYNX fabric/weave HDAs https://www.lucascheller.de/posts/ecae2c0393b0980c5c909b5060fdc1a3/
  - OD tools https://origamidigital.com/cart/index.php?route=product/product&path=59_63&product_id=64
 
-## Other blogs
- - https://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html
+## Other blogs/tutorials
+ - [vex wrangle cheat sheet](https://mrkunz.com/blog/08_22_2018_VEX_Wrangle_Cheat_Sheet.html)
+ - [gfxhacks.com create parms in python](https://gfxhacks.com/create-parameters-in-houdini-with-python)
  
 ## Misc
 #### Rotate camera 360 in 100 frames
