@@ -5,7 +5,7 @@
  - [Misc](#misc)
  - [Rigging](#rigging)
  - [HDAs](#hdas)
- - [Vex](#vex)
+ - [VEX](#vex)
  - [Python](#python)
  - [Retopo](#retopo)
  - [Cloth](#cloth)
@@ -172,6 +172,36 @@ vector direction = sample_direction_cone(axis, radians(ch("angle")), u);
 addpoint(0, @P);
 removeprim(0, @primnum, 1);
 ```
+
+#### Rotate packed prims
+![image](https://user-images.githubusercontent.com/12150445/142250132-7cab7c98-e6a9-4d6d-94c0-fbf88ec1f0aa.png)
+```c
+int posprim;
+vector param_uv;
+float maxdist = 1;
+float dist = xyzdist(1, @P, posprim, param_uv, maxdist);
+
+// if you needed to store the position / primuv
+i@posprim = posprim;
+v@param_uv = param_uv;
+
+float dist_ramped = chramp('distance', dist);
+
+// create angle from dist ramp
+float angle = chf('angle') * dist_ramped;
+
+// get current packed transform
+matrix packed_transform = getpackedtransform(0, @primnum);
+
+// matrix to transform by
+matrix transform = ident();
+rotate(transform, radians(angle), normalize(chv('axis')));
+
+// set transform
+setpackedtransform(0, @primnum, transform * packed_transform);
+```
+
+
 
 ## Redshift
 Not well documented, how to enable console log
