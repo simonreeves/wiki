@@ -150,6 +150,14 @@ dist = chramp('remap', dist);
 // set attribute
 f@dist = dist;
 ```
+#### get centroid
+```c
+// get centroid
+vector min, max;
+getbbox(min, max);
+vector centroid = (min+max)/2;
+```
+
 
 #### Create random direction vector in cone
 ```c
