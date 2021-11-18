@@ -191,7 +191,7 @@ addpoint(0, @P);
 removeprim(0, @primnum, 1);
 ```
 
-#### Rotate packed prims
+### Rotate packed prims
 ![image](https://user-images.githubusercontent.com/12150445/142250132-7cab7c98-e6a9-4d6d-94c0-fbf88ec1f0aa.png)
 ```c
 int posprim;
@@ -217,6 +217,29 @@ rotate(transform, radians(angle), normalize(chv('axis')));
 
 // set transform
 setpackedtransform(0, @primnum, transform * packed_transform);
+```
+
+## Rotate packed prims 2 (test)
+
+Based on [[http://www.tokeru.com/cgwiki/?title=Houdini#Transform_packed_prims_with_instance_attributes|cgwiki]]! 
+in a `primitive wrangle sop`
+
+```c
+// instead of creating a new transform, use the current one
+//matrix3 m = ident();
+matrix3 m = primintrinsic(0, "transform", @primnum);
+
+float angle = @Time*10;
+
+// rotate around up
+vector axis = {0,1,0};
+// vector axis = primintrinsic(0, "transform", @primnum);
+
+// rotate
+rotate(m, angle, axis);
+
+// set the attribute
+setprimintrinsic(0, "transform", @primnum, m);
 ```
 
 
