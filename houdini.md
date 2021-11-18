@@ -30,10 +30,12 @@ A rough list of some free, some paid, useful HDAs and tool sets
 Use `extract transform` and `transform pieces` SOPs to 'stick' additional geometry to somewhere on a deforming geo.
 The setup can be confusing but it works like this:
 
-Extract transform wants
+`Extract Transform` wants:
   - input 1: rest point
   - input 2: deformed/animated point
-transform peices
+ 
+ 
+`Transform Pieces` wants:
   - input 1: geo to deform IN situ of rest point
   - input 2: extracted transform point
 
