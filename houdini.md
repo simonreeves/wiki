@@ -184,12 +184,14 @@ vector2 u = rand(@class);
 vector direction = sample_direction_cone(axis, radians(ch("angle")), u);
 ```
 #### Add point on each prim
-![pointprim](media/point_each_prim_wrangle.PNG)
-
+On a prim wrangle!
 ```c
 addpoint(0, @P);
 removeprim(0, @primnum, 1);
 ```
+![image](https://user-images.githubusercontent.com/12150445/142423199-63732c56-2b8b-48dc-af44-5fd16bf49770.png)
+
+
 
 ### Rotate packed prims
 ![image](https://user-images.githubusercontent.com/12150445/142250132-7cab7c98-e6a9-4d6d-94c0-fbf88ec1f0aa.png)
