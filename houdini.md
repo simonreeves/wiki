@@ -26,7 +26,15 @@ A rough list of some free, some paid, useful HDAs and tool sets
  
 ## Misc
 
+### Rescale camera
+For example a camera from Maya needs to be rescaled from meters to cm for houdini
+This could have adverse effects, in mantra for example (maybe no longer) scaling the actual camera object by `0.01` the exposure is also scaled, so instead you can just `fetch` and `blend`
+
+![image](https://user-images.githubusercontent.com/12150445/142425957-4a615051-e8a2-47fa-bfb4-f9866f3b1c3e.png)
+
 ### Sequence offset from frame 1 to 1001
+
+
 ```
 padzero(4, $F4-1000)
 ```
