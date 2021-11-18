@@ -9,6 +9,7 @@
  - [Python](#python)
  - [Retopo](#retopo)
  - [Cloth](#cloth)
+ - [RBD](#rbd)
  
  
 :star: I also have saved some useful snippets as [gists](https://gist.github.com/simonreeves)
@@ -212,3 +213,11 @@ hou.hscript("Redshift_setLogLevel -L 5")
 # Set log level
 hou.hscript("Redshift_switchConsoleLog")
 ```
+
+## RBD
+#### Cache points only
+Useful big save on caching to disk is just saving the points from a RBD solver. But this often doesn't work how you would expect.
+
+This example works, had problems with using the rbd input or configure geo, but the first frame of the solver works fine - inside the rbd solver SOP it is actually using transform pieces for the first output...
+![image](https://user-images.githubusercontent.com/12150445/142419287-2330c66c-8fc0-415f-94b9-cb84dd8ba24d.png)
+
