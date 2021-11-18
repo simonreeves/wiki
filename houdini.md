@@ -26,6 +26,12 @@ A rough list of some free, some paid, useful HDAs and tool sets
  
 ## Misc
 
+### Get max attribute
+
+A good way (showed to me by Mark J) to get the maximum value of a specific attribute is to use `attribute promote` SOP and promote to `detail` based on `maximum`.
+![image](https://user-images.githubusercontent.com/12150445/142424890-47cb9405-97fe-4d45-a47f-f9fe87612ad1.png)
+
+
 ### Attach to deforming geo
 Use `extract transform` and `transform pieces` SOPs to 'stick' additional geometry to somewhere on a deforming geo.
 The setup can be confusing but it works like this:
