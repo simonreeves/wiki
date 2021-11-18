@@ -26,6 +26,11 @@ A rough list of some free, some paid, useful HDAs and tool sets
  
 ## Misc
 
+### Sequence offset from frame 1 to 1001
+```
+padzero(4, $F4-1000)
+```
+
 ### Get max attribute
 
 A good way (showed to me by Mark J) to get the maximum value of a specific attribute is to use `attribute promote` SOP and promote to `detail` based on `maximum`
