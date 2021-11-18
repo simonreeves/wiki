@@ -25,6 +25,21 @@ A rough list of some free, some paid, useful HDAs and tool sets
  - [gfxhacks.com create parms in python](https://gfxhacks.com/create-parameters-in-houdini-with-python)
  
 ## Misc
+
+### Attach to deforming geo
+Use `extract transform` and `transform pieces` SOPs to 'stick' additional geometry to somewhere on a deforming geo.
+The setup can be confusing but it works like this:
+
+Extract transform wants
+  - input 1: rest point
+  - input 2: deformed/animated point
+transform peices
+  - input 1: geo to deform IN situ of rest point
+  - input 2: extracted transform point
+
+![image](https://user-images.githubusercontent.com/12150445/142420217-613d820d-2ac8-4428-ad1e-d30efae06906.png)
+
+
 #### Rotate camera 360 in 100 frames
 as an expression
 ```
