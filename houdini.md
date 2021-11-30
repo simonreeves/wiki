@@ -74,7 +74,7 @@ In camera background for example
 $JOB/MySequence.`padzero(4, $F4-1000)`.jpg
 ```
 
-## Rigging
+# Rigging
 Just watch these Sidefx tutorials by Michael Goldfarb
  - Scripts are included on the [sidefx page](https://www.sidefx.com/tutorials/rigging-series-01-hda-spine/)
  - watch the [series 1 playlist](https://www.youtube.com/playlist?list=PLXNFA1EysfYkxrb8DlW05gBi1LOZKBbHS)
@@ -85,7 +85,7 @@ Just watch these Sidefx tutorials by Michael Goldfarb
 
 
 
-## HDAs
+# HDAs
 [The SideFX rigging tutorials](https://www.youtube.com/playlist?list=PLXNFA1EysfYkxrb8DlW05gBi1LOZKBbHS) have lots of useful tips on how to create, and manage HDAs
 
 #### Turn on asset definitions toolbar
@@ -140,7 +140,21 @@ https://youtu.be/4nC-L19400I?t=12200), he shows a (complicated!) way to extract 
  - [Help initially intersecting collisions](https://youtu.be/4nC-L19400I?t=2344)
  - [Un-pin using @stopped attribute (vellum H17)](https://youtu.be/NwabG-znu9Y?t=3113)
  - [stiffness dropoff](https://youtu.be/zPQZ8KJTjzo?t=1037)
-## Python
+
+
+# Python
+Print a list of all materials attributes assigned on a selected node. Made this as I wanted a list to be able to pick materials to override in a redshift proxy!
+
+```python
+for n in hou.selectedNodes():
+    g = n.geometry()
+    a = g.findPrimAttrib('shop_materialpath')
+    
+    materials = a.strings()
+     
+    for m in materials:
+        print(m)
+```
 
 Check if in UI mode, ie. disable popups or enable things only when rendering
 
@@ -167,7 +181,7 @@ def nulls_from_x():
         new_null.parm('scale').set(scale)
 ```
 
-## VEX
+# VEX
 #### General useful vex wrangle examples
 ```c
 // get nearest point index of second input
@@ -265,8 +279,7 @@ setprimintrinsic(0, "transform", @primnum, m);
 ```
 
 
-
-## Redshift
+# Redshift
 Not well documented, how to enable console log
 ```python
 # Toggle Redshift console log
