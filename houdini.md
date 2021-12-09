@@ -109,7 +109,14 @@ def my_function(kwargs):
     selection_value = kwargs['script_value0']
 ```
 
+### Script action
+If there is a cog button to press such as this example from the deadline submitter node, you can acccess the python module in the HDA like this:
+![image](https://user-images.githubusercontent.com/12150445/145382508-80d5a2cf-18d8-466a-96a9-a1060259f26b.png)
 
+It's useful to pass kwargs along too
+```python
+kwargs['node'].hdaModule().myfunction(kwargs)
+```
 
 #### Set HDA node look and settings
 To set a HDA's initial look, add a `OnCreated` python script in scripts tab. The following code sets the shape as 'clipped_left' and to some blueish colour.
